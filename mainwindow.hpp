@@ -18,6 +18,7 @@ public:
 signals:    
 public slots:
     void procsWes(int iWes);
+    void setLimit();
     void startProcs();
     void stopProcs();
     void stopCatch();

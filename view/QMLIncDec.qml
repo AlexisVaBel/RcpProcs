@@ -6,7 +6,8 @@ Item{
     property    int         iheight:       32
     property    int         iniVal:         0
     property    string   textVal:       ""
-
+    signal upClick()
+    signal dwnClick()
     Rectangle {
         id:       rectText
         x: 0
@@ -18,14 +19,14 @@ Item{
         TextInput {
             id: textinput1
             x: 10
-            y: 0
+            y: 7
             width: 65
             enabled: false
             color: "white";
             selectionColor: "blue"
             font.pixelSize: 14;
 
-            height: parent.height
+            height: parent.height-8
             horizontalAlignment: TextInput.AlignRight
             text:   iniVal
         }
@@ -41,7 +42,8 @@ Item{
         MouseArea{
             anchors.fill:parent
             onClicked: {
-                incdec.iniVal= incdec.iniVal-1
+                dwnClick()
+//                incdec.iniVal= incdec.iniVal-1
             }
         }
     }
@@ -56,7 +58,8 @@ Item{
         MouseArea{
             anchors.fill:parent
             onClicked: {
-                incdec.iniVal= incdec.iniVal+1
+                upClick()
+//                incdec.iniVal= incdec.iniVal+1
             }
         }
     }

@@ -7,6 +7,10 @@ qmlTester::qmlTester(QObject *parent,int iCntLim) :
     connect(m_timer, SIGNAL(timeout()), this, SLOT(procs()));
 }
 
+void qmlTester::setMaxTime(int iTime){
+    this->m_iCntLimit=iTime;
+}
+
 void qmlTester::startProcs(){
     m_iCurShot=0;
     m_timer->start(1000);

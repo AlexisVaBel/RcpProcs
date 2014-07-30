@@ -15,6 +15,7 @@ QMLMainForm {
     property    bool bRcpDisable: false
 
     property    string textCompStartNum: "1";
+    property    int      iMaxCnt:10;
 
     signal  startPressed()
     signal  rcpPressed()
@@ -82,6 +83,15 @@ QMLMainForm {
         id: qmlincdec1
         x: 17
         y: 140
+        iniVal:iMaxCnt
+        onDwnClick: {
+            iMaxCnt=iMaxCnt-1;
+            iniVal=iMaxCnt;
+        }
+        onUpClick:{
+            iMaxCnt=iMaxCnt+1;
+            iniVal=iMaxCnt;
+        }
     }
 
 }
