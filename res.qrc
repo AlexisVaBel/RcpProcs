@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>view/WesView.qml</file>
+        <file>view/QMLButton.qml</file>
+        <file>view/QMLFrame.qml</file>
+        <file>view/QMLMainForm.qml</file>
+        <file>view/QMLValView.qml</file>
+        <file>view/QMLHidingView.qml</file>
+        <file>view/images/dwn.png</file>
+        <file>view/images/up.png</file>
+        <file>view/QMLArcButton.qml</file>
+        <file>view/QMLLoadProgress.qml</file>
+        <file>view/QMLIncDec.qml</file>
+    </qresource>
+</RCC>
